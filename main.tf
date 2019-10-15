@@ -39,7 +39,7 @@ resource "google_compute_instance" "lamp-stack" {
       network_tier = "PREMIUM"
     }
   }
-  metadata_startup_script = "sudo apt-get update; sudo apt-get install git  -y; git clone https://github.com/iamdaaniyaal/lamp.git; sudo cd lamp; sudo chmod 777 lamp.sh; sh lamp.sh"
+  metadata_startup_script = "sudo apt-get update; sudo apt-get install git  -y; git clone https://github.com/iamdaaniyaal/lamp.git; cd /; cd lamp; sudo chmod 777 lamp.sh; sh lamp.sh"
 
  
 }
