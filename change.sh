@@ -6,5 +6,5 @@ sudo sed -i 's/stacked/'$stack'/' terraform.tfvars
 
 
 terraform init
-terrform plan
+terraform plan
 terraform apply --auto-approve
