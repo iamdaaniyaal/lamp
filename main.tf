@@ -10,8 +10,8 @@ provider "google" {
 
 //Reserving LAMP Stack IP
 resource "google_compute_address" "lampip" {
-  name   = "lampip"
-  region = "us-east1"
+  name   = "${var.lamp_stack_instance_ip_name}"
+  region = "${var.lamp_stack_instance_ip_region}"
 }
 
   
